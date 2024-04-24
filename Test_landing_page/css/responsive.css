@@ -1,0 +1,118 @@
+@media screen and (max-width: 1024px) {
+
+    /* navbar */
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links.show {
+        display: flex;
+        flex-direction: column;
+        background-color: #004b8d;
+        width: 100%;
+        padding: 20px;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+    }
+
+    .toggle-button {
+        display: block;
+    }
+
+    .toggle-button::before {
+        content: '\2630';
+    }
+
+    .menu-open .toggle-button::before {
+        content: '\00d7';
+    }
+
+    .menu-open {
+        background-color: #004b8d;
+    }
+
+    .menu-open .social-icons {
+        display: none;
+    }
+
+
+    .toggle-button:not(.menu-open)::before {
+        content: '\2630';
+    }
+
+    /* navbar ends here  */
+    .logo-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-separator {
+        display: none;
+
+    }
+
+    .logo-start,
+    .logo-end {
+        margin: 10px 0;
+
+    }
+
+    .logo-end img {
+        margin-left: 0;
+        height: 7vh;
+
+    }
+
+    /* header ends */
+    /* content starts here */
+    .content {
+        width: 80vw;
+        text-align: center;
+    }
+
+    .con1 {
+        width: 100%;
+    }
+
+    .content h2 {
+        font-size: 2.5em;
+    }
+
+    .content p {
+        font-size: 0.9em;
+    }
+
+    .sec2 .about h3 {
+        font-size: 2.5em;
+    }
+
+    .sec2 .about p {
+        font-size: 0.9em;
+    }
+
+    .sec3 {
+        margin-top: 200px;
+    }
+
+    .white-box {
+        width: 100%;
+    }
+
+    .sec3 .sector p {
+        font-size: 1.5em;
+    }
+
+    .faculty {
+        text-align: center;
+        color: white;
+        font-weight: 500;
+        font-size: 1.5em;
+    }
+
+    sec5 {
+        height: 30vh;
+    }
+}
